@@ -3,7 +3,7 @@ const projects = [
     {
         name: "Wilderlands",
         description: "Survival Game",
-        image: "/images/Wilderlands.png",
+        image: "/images/wilderlands.png",
         github: "https://github.com/eball0509/PRO390_Eavens_Capstone",
         tech: ["Unity", "C#", "Gameplay Programming", "Scriptable Objects", "Unity Input System"]
     },
