@@ -19,11 +19,7 @@ export default function ProjectsPage() {
       <p className="text-gray-400 max-w-2xl mb-10">
         A collection of my work in game development, systems programming, and tools built with Unity and Unreal. Each project represents problem-solving, design thinking, and hands-on development.
       </p>
-
-      <h2 className="text-lg text-gray-400 mb-4">
-        Selected Work
-      </h2>
-
+      
       <ProjectCube />
 
       {/* PROJECT GRID */}

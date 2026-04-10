@@ -24,7 +24,7 @@ export default function ContactPage() {
               href="mailto:eavenba3@gmail.com"
               className="block text-center bg-gray-900 border border-gray-700 rounded-lg p-4 hover:border-green-400 hover:bg-gray-800 hover:scale-105 transition"
             >
-              📧 Email Me
+              Email Me
             </a>
 
             <a
@@ -33,7 +33,7 @@ export default function ContactPage() {
               rel="noopener noreferrer"
               className="block text-center bg-gray-900 border border-gray-700 rounded-lg p-4 hover:border-green-400 hover:bg-gray-800 hover:scale-105 transition"
             >
-              💻 GitHub
+              GitHub
             </a>
 
             <a
@@ -42,7 +42,7 @@ export default function ContactPage() {
               rel="noopener noreferrer"
               className="block text-center bg-gray-900 border border-gray-700 rounded-lg p-4 hover:border-green-400 hover:bg-gray-800 hover:scale-105 transition"
             >
-              🔗 LinkedIn
+              LinkedIn
             </a>
 
           </div>
