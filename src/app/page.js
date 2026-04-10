@@ -4,17 +4,15 @@ export default function Home() {
   return (
     <main className="bg-black text-white min-h-screen p-10">
 
-      {/* HERO */}
       <Hero />
 
-      {/* ABOUT SUMMARY */}
       <section className="mt-16 max-w-3xl">
         <h2 className="text-2xl font-bold text-green-400 mb-4">
           About
         </h2>
 
         <p className="text-gray-400">
-          I’m a software and game developer focused on building interactive systems, gameplay mechanics, and development tools using Unity and Unreal Engine. I also have a strong foundation in software development and am expanding into web technologies.
+          Games. Tools. Engines. I build things that move, respond, and scale — and I'm always working on what's next.
         </p>
 
         <a
@@ -25,7 +23,6 @@ export default function Home() {
         </a>
       </section>
 
-      {/* WHAT I'M WORKING ON */}
       <section className="mt-16 max-w-3xl">
         <h2 className="text-2xl font-bold text-green-400 mb-4">
           What I’m Working On
@@ -36,7 +33,6 @@ export default function Home() {
         </p>
       </section>
 
-      {/* SKILLS */}
       <section className="mt-16">
         <h2 className="text-2xl font-bold text-green-400 mb-4">
           Skills & Focus
@@ -44,11 +40,10 @@ export default function Home() {
 
         <div className="space-y-6">
 
-          {/* Core Development */}
           <div>
             <h3 className="text-green-400 mb-2">Core Development</h3>
             <div className="flex flex-wrap gap-2">
-              {["C#", "C++", "Unity", "Unreal Engine", "Blueprints"].map((skill) => (
+              {["C#", "C++", "Unity", "Unreal Engine", "Blueprints", "GitHub"].map((skill) => (
                 <span
                   key={skill}
                   className="bg-gray-900 border border-green-500/30 text-green-400 px-3 py-1 rounded"
@@ -59,11 +54,10 @@ export default function Home() {
             </div>
           </div>
 
-          {/* Software Development */}
           <div>
             <h3 className="text-green-400 mb-2">Software Development</h3>
             <div className="flex flex-wrap gap-2">
-              {[".NET / .NET MAUI", "Application Development", "Systems Design", "Tool Development"].map((skill) => (
+              {[".NET / .NET MAUI", "Application Development", "Systems Design", "Tool Development", "OOP", "Data Structures", "Algorithms"].map((skill) => (
                 <span
                   key={skill}
                   className="bg-gray-900 border border-green-500/30 text-green-400 px-3 py-1 rounded"
@@ -74,11 +68,10 @@ export default function Home() {
             </div>
           </div>
 
-          {/* Web Development */}
           <div>
-            <h3 className="text-green-400 mb-2">Web Development (Expanding)</h3>
+            <h3 className="text-green-400 mb-2">AI & Tooling</h3>
             <div className="flex flex-wrap gap-2">
-              {["HTML", "React", "Next", "Modern Web Development"].map((skill) => (
+              {["AI Integration", "Python", "Java"].map((skill) => (
                 <span
                   key={skill}
                   className="bg-gray-900 border border-green-500/30 text-green-400 px-3 py-1 rounded"
@@ -88,6 +81,22 @@ export default function Home() {
               ))}
             </div>
           </div>
+
+          <div>
+            <h3 className="text-green-400 mb-2">Web Development (Expanding)</h3>
+            <div className="flex flex-wrap gap-2">
+              {["HTML", "React", "Next", "javaScript", "Modern Web Development", "API Integration"].map((skill) => (
+                <span
+                  key={skill}
+                  className="bg-gray-900 border border-green-500/30 text-green-400 px-3 py-1 rounded"
+                >
+                  {skill}
+                </span>
+              ))}
+            </div>
+          </div>
+
+          
 
         </div>
       </section>

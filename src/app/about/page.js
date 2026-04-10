@@ -51,15 +51,11 @@ export default function AboutPage() {
           </h2>
 
           <p className="text-gray-300">
-            I’m currently working in <span className="text-blue-400">Unity</span> and{" "}
-            <span className="text-blue-400">Unreal Engine</span>, focusing on improving 
-              my game development skills and building more advanced, performance-oriented systems.
-          </p>
-
-          <p className="text-gray-300 mt-2">
-            Alongside that, I’m expanding into web development, developing a solid 
-            foundation and progressing into more intermediate concepts to strengthen 
-            my versatility as a developer.
+            Working toward building games that are as solid under the hood as they feel to play.
+            That means spending a lot of time in gameplay systems, AI behaviors, and the kind of tooling that makes development faster and less painful.
+            I care as much about how code is structured as I do about what it does, clean, modular systems that are easy to iterate on matter to me.
+            Web development is the newest layer, and I'm approaching it the same way, building real things instead of just following tutorials.
+            The goal is to be the kind of developer who can own a system end to end, whether that's a game mechanic or a full-stack feature.
           </p>
         </div>
 
