@@ -26,10 +26,10 @@ export default function ProjectCube() {
     const loader = new THREE.TextureLoader();
 
     const materials = [
-      new THREE.MeshBasicMaterial({ map: loader.load("/images/Wilderlands.png") }),
+      new THREE.MeshBasicMaterial({ map: loader.load("/images/wilderlands.png") }),
       new THREE.MeshBasicMaterial({ map: loader.load("/images/zwave.png") }),
       new THREE.MeshBasicMaterial({ map: loader.load("/images/PIM.png") }),
-      new THREE.MeshBasicMaterial({ map: loader.load("/images/Wilderlands.png") }),
+      new THREE.MeshBasicMaterial({ map: loader.load("/images/wilderlands.png") }),
       new THREE.MeshBasicMaterial({ map: loader.load("/images/zwave.png") }),
       new THREE.MeshBasicMaterial({ map: loader.load("/images/PIM.png") }),
     ];
