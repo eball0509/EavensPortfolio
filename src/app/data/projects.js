@@ -20,6 +20,13 @@ const projects = [
         image: "/images/PIM.png",
         github: "https://github.com/eball0509/PoultryInMotion",
         tech: ["Unity", "C#", "Gameplay Programming", "Unity Input System", "Procedural Generation"]
+    },
+    {
+        name: "Shooting Range",
+        description: "Target Practice",
+        image: "/images/shootingrange.png",
+        github: "https://github.com/eball0509/ShootingRange",
+        tech: ["Unity", "C#", "Gameplay Programming", "Unity Input System"]
     }
     
 ]

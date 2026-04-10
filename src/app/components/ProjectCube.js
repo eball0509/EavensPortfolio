@@ -29,9 +29,9 @@ export default function ProjectCube() {
       new THREE.MeshBasicMaterial({ map: loader.load("/images/wilderlands.png") }),
       new THREE.MeshBasicMaterial({ map: loader.load("/images/zwave.png") }),
       new THREE.MeshBasicMaterial({ map: loader.load("/images/PIM.png") }),
+      new THREE.MeshBasicMaterial({ map: loader.load("/images/shootingrange.png") }),
       new THREE.MeshBasicMaterial({ map: loader.load("/images/wilderlands.png") }),
       new THREE.MeshBasicMaterial({ map: loader.load("/images/zwave.png") }),
-      new THREE.MeshBasicMaterial({ map: loader.load("/images/PIM.png") }),
     ];
 
     const geometry = new THREE.BoxGeometry();
