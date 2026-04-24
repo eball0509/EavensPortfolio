@@ -4,20 +4,16 @@ export default function ContactPage() {
 
       <div className="max-w-4xl w-full">
 
-        {/* Title */}
         <h1 className="text-4xl font-bold text-green-400 mb-6">
           Contact Me
         </h1>
 
-        {/* Subtitle */}
         <p className="text-gray-300 mb-10 max-w-md">
           Feel free to reach out through any of the platforms below. I'm always open to discussing projects, opportunities, or collaborations.
         </p>
 
-        {/* GRID LAYOUT */}
         <div className="grid md:grid-cols-2 gap-8">
 
-          {/* LEFT: CONTACT LINKS */}
           <div className="space-y-4">
 
             <a
@@ -47,7 +43,6 @@ export default function ContactPage() {
 
           </div>
 
-          {/* RIGHT: INFO CARD */}
           <div className="bg-gray-900 border border-gray-800 rounded-xl p-6">
 
             <h2 className="text-green-400 text-xl mb-3">

@@ -47,7 +47,7 @@ export default function AboutPage() {
         {/* Extra section */}
         <div className="bg-gray-900 border border-gray-800 rounded-xl p-4">
           <h2 className="text-green-400 mb-2">
-            Currently Working On
+            In-Depth
           </h2>
 
           <p className="text-gray-300">
