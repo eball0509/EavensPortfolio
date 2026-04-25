@@ -34,8 +34,8 @@ export default function CustomCursor() {
     // Smooth ring follow
     let animId;
     function followRing() {
-      ring.current.x += (pos.current.x - ring.current.x) * 0.25;
-      ring.current.y += (pos.current.y - ring.current.y) * 0.25;
+      ring.current.x += (pos.current.x - ring.current.x) * .4;
+      ring.current.y += (pos.current.y - ring.current.y) * .4;
       ringEl.style.transform = `translate(${ring.current.x}px, ${ring.current.y}px)`;
       animId = requestAnimationFrame(followRing);
     }
