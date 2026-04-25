@@ -4,6 +4,7 @@ import { useEffect, useState } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 import Hero from "./components/Hero";
 import IntroOverlay from "./components/IntroOverlay";
+import TypewriterHeading from "./components/TypewriterHeading";
 
 // ── Typing effect hook ──────────────────────────────────────────
 function useTypingEffect(phrases, speed = 80, pause = 1800) {
@@ -150,6 +151,12 @@ function GlowButton({ href, children }) {
 // ── Page ────────────────────────────────────────────────────────
 export default function Home() {
   const [introFinished, setIntroFinished] = useState(false);
+  const [showIntro, setShowIntro] = useState(false);
+
+  useEffect(() => {
+    const seen = sessionStorage.getItem("introDone");
+    if (!seen) setShowIntro(true);
+  }, []);
 
   const typed = useTypingEffect([
     "Game Developer",
@@ -160,7 +167,13 @@ export default function Home() {
 
   return (
     <main className="relative text-white min-h-screen p-10 overflow-hidden">
-      <IntroOverlay onDone={() => setIntroFinished(true)} />
+      {showIntro && (
+        <IntroOverlay onDone={() => {
+          sessionStorage.setItem("introDone", "1");
+          setIntroFinished(true);
+          setShowIntro(false);
+        }} />
+      )}
 
 
 
@@ -184,9 +197,7 @@ export default function Home() {
           whileInView="show"
           viewport={{ once: true }}
         >
-          <h2 className="text-2xl font-bold mb-4">
-            <GlitchText text="About" />
-          </h2>
+          <TypewriterHeading text="About" tag="h2" className="text-2xl font-bold mb-4" />
           <p className="text-gray-400">
             Games. Tools. Engines. I build things that move, respond, and scale — and I'm always working on what's next.
           </p>
@@ -204,7 +215,7 @@ export default function Home() {
           whileInView="show"
           viewport={{ once: true }}
         >
-          <h2 className="text-2xl font-bold text-green-400 mb-4">What I'm Working On</h2>
+          <TypewriterHeading text="What I'm Working On" tag="h2" className="text-2xl font-bold text-green-400 mb-4" />
           <p className="text-gray-400 leading-relaxed">
             I'm currently developing projects in both Unity and Unreal to strengthen my game development skills.
             At the same time, I'm building a strong foundation in web development and continuing to grow as a
@@ -221,7 +232,7 @@ export default function Home() {
           whileInView="show"
           viewport={{ once: true }}
         >
-          <h2 className="text-2xl font-bold text-green-400 mb-6">Skills & Focus</h2>
+          <TypewriterHeading text="Skills & Focus" tag="h2" className="text-2xl font-bold text-green-400 mb-6" />
           <div className="space-y-6">
             <SkillGroup title="Core Development"     skills={["C#", "C++", "Unity", "Unreal Engine", "Blueprints", "GitHub"]} />
             <SkillGroup title="Software Development" skills={[".NET / .NET MAUI", "Application Development", "Systems Design", "Tool Development", "OOP", "Data Structures", "Algorithms"]} />
@@ -239,7 +250,7 @@ export default function Home() {
           whileInView="show"
           viewport={{ once: true }}
         >
-          <h2 className="text-2xl font-bold text-green-400 mb-4">Let's Connect</h2>
+          <TypewriterHeading text="Let's Connect" tag="h2" className="text-2xl font-bold text-green-400 mb-4" />
           <p className="text-gray-400 mb-6">Interested in collaborating or want to reach out?</p>
           <GlowButton href="/contact">Contact Me</GlowButton>
         </motion.section>

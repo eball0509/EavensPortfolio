@@ -2,6 +2,7 @@
 
 import { useState } from "react";
 import { motion, AnimatePresence } from "framer-motion";
+import TypewriterHeading from "../components/TypewriterHeading";
 import projects from "../data/projects";
 import ProjectCube from "../components/ProjectCube";
 
@@ -18,17 +19,10 @@ export default function ProjectsPage() {
   const [selectedProject, setSelectedProject] = useState(null);
 
   return (
-    <main className="bg-black text-white min-h-screen p-10">
+    <main className="relative text-white min-h-screen p-10">
 
       {/* TITLE */}
-      <motion.h1
-        className="text-3xl font-bold text-green-400 mb-4"
-        initial={{ opacity: 0, y: -16 }}
-        animate={{ opacity: 1, y: 0 }}
-        transition={{ duration: 0.4 }}
-      >
-        Projects
-      </motion.h1>
+      <TypewriterHeading text="Projects" tag="h1" className="text-3xl font-bold text-green-400 mb-4" />
 
       {/* INTRO */}
       <motion.p
