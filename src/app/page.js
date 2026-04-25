@@ -159,28 +159,10 @@ export default function Home() {
   ]);
 
   return (
-    <main className="relative bg-black text-white min-h-screen p-10 overflow-hidden">
+    <main className="relative text-white min-h-screen p-10 overflow-hidden">
       <IntroOverlay onDone={() => setIntroFinished(true)} />
 
-      {/* Subtle scanline overlay */}
-      <div
-        aria-hidden="true"
-        className="pointer-events-none fixed inset-0 z-0"
-        style={{
-          background:
-            "repeating-linear-gradient(0deg, transparent, transparent 2px, rgba(0,255,100,0.015) 2px, rgba(0,255,100,0.015) 4px)",
-        }}
-      />
 
-      {/* Ambient glow blob */}
-      <div
-        aria-hidden="true"
-        className="pointer-events-none fixed top-[-200px] left-[-200px] w-[600px] h-[600px] rounded-full z-0"
-        style={{
-          background: "radial-gradient(circle, rgba(34,197,94,0.08) 0%, transparent 70%)",
-          filter: "blur(40px)",
-        }}
-      />
 
       <div className="relative z-10">
 

@@ -1,6 +1,7 @@
 import { Geist, Geist_Mono } from "next/font/google";
 import "./globals.css";
 import Navbar from "./components/Navbar";
+import BackgroundCanvas from "./components/BackgroundCanvas";
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -21,7 +22,10 @@ export default function RootLayout({ children }) {
   return (
     <html lang="en">
       <body className="bg-black text-white">
-        
+
+        {/* Background (shows on every page) */}
+        <BackgroundCanvas />
+
         {/* Navbar (shows on every page) */}
         <Navbar />
 
