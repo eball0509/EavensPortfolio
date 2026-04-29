@@ -8,7 +8,7 @@ const BOOT_LINES = [
   "> mounting components...",
   "> checking render pipeline...",
   "> all systems nominal.",
-  "> welcome, Eaven.",
+  "> welcome",
 ];
 
 export default function IntroOverlay({ onDone }) {
