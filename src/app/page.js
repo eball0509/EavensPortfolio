@@ -137,7 +137,7 @@ function GlowButton({ href, children }) {
 const stats = [
   { label: "Years Coding", value: "3"     },
   { label: "Hours Logged", value: "1,000+" },
-  { label: "Languages",    value: "3"     },
+  { label: "Languages",    value: "7+"     },
 ];
 const languages = ["C#", "Python", "C++"];
 
@@ -253,10 +253,10 @@ export default function Home() {
           >
             <TypewriterHeading text="Skills & Focus" tag="h2" className="text-2xl font-bold text-green-400 mb-6" />
             <div className="space-y-6">
-              <SkillGroup title="Core Development"     skills={["C#", "C++", "Unity", "Unreal Engine", "Blueprints", "GitHub"]} />
-              <SkillGroup title="Software Development" skills={[".NET / .NET MAUI", "Application Development", "Systems Design", "Tool Development", "OOP", "Data Structures", "Algorithms"]} />
-              <SkillGroup title="AI & Tooling"         skills={["AI Integration", "Python", "Java"]} />
-              <SkillGroup title="Web Development (Expanding)" skills={["HTML", "React", "Next.js", "JavaScript", "Modern Web Development", "API Integration"]} />
+              <SkillGroup title="Core Development"     skills={["C#", "C++", "Unity", "Unreal Engine", "Blueprints", "GitHub", "Shaders", "NavMesh", "Particle Systems", "Animation State Machines", "Level Design", "Scriptable Objects", "Unity Physics", "Coroutines", "Ray Casting", "Event Systems", "Input System"]} />
+              <SkillGroup title="Software Development" skills={[".NET / .NET MAUI", "Application Development", "Systems Design", "Tool Development", "OOP", "Data Structures", "Algorithms", "SQL", "Unit Testing", "Technical Documentation", "Recursion", "Singleton Pattern", "Refactoring", ]} />
+              <SkillGroup title="AI & Tooling"         skills={["AI Integration", "Python", "Java", "Prompt Engineering", "Behavior Trees"]} />
+              <SkillGroup title="Web Development (Expanding)" skills={["HTML", "React", "Next.js", "JavaScript", "Modern Web Development", "API Integration", "Tailwind CSS", "Node.js", "TypeScript", "Vercel / Deployment", "CSS"]} />
             </div>
           </motion.section>
 
