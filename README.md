@@ -33,18 +33,6 @@ I'm Eaven Ball — a developer with experience across game development, software
 
 ---
 
-## Skills
-
-**Core Game Development** — C#, C++, Unity, Unreal Engine, Blueprints, Shaders, NavMesh, Particle Systems, Animation State Machines, Scriptable Objects, Ray Casting, Input System
-
-**Software Development** — .NET / .NET MAUI, OOP, Data Structures, Algorithms, SQL, Unit Testing, Singleton Pattern, Refactoring
-
-**AI & Tooling** — Python, Java, AI Integration, Prompt Engineering, Behavior Trees
-
-**Web Development** — React, Next.js, JavaScript, TypeScript, Tailwind CSS, Node.js, API Integration, Vercel
-
----
-
 ## Getting Started
 
 Clone the repo and install dependencies:
