@@ -40,7 +40,7 @@ export default function AboutPage() {
             </div>
 
             <div className="w-full border-t border-gray-800 pt-3 text-center">
-              <p className="text-gray-500 text-xs">Based in Utah, USA</p>
+              <p className="text-gray-500 text-xs">Based in Indiana, USA</p>
             </div>
           </motion.div>
 
